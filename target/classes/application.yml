@@ -1,0 +1,50 @@
+pages:
+  csl-ui:
+    baseUrl: ${CSL_UI_BASE_URL:https://integration.learn.civilservice.gov.uk}
+    modules:
+      baseUrl: ${CONTENT_CDN_BASE_URL:https://cdn.integration.learn.civilservice.gov.uk/lpgdevcontent}
+      video:
+        load-timeout: ${VIDEO_MODULE_LOAD_TIMEOUT_MS:3000}
+      file:
+        load-timeout: ${FILE_MODULE_LOAD_TIMEOUT_MS:1000}
+      elearning:
+        load-timeout: ${ELEARNING_MODULE_LOAD_TIMEOUT_MS:3000}
+  csl-management:
+    baseUrl: ${CSL_MANAGEMENT_BASE_URL:https://management.integration.learn.civilservice.gov.uk}
+    module-creation:
+      pdf-file-name: ${SAMPLE_FILE_LOCATION:dummy.pdf}
+      cdn-pdf:
+        url: ${SAMPLE_FILE_CDN_LOCATION:https://cdn.integration.learn.civilservice.gov.uk/lpgdevcontent/ACCEPTANCE-COURSE-dueq/H4jf8xKeSF2yuWZOVCNbww/dummy.pdf}
+        name: dummy
+      elearning:
+        url: ${SAMPLE_ELEARNING_CDN_LOCATION:https://cdn.integration.learn.civilservice.gov.uk/lpgdevcontent/NutcujZkRrGYeY3K_S0Lag/H6dn50-oT72wPNjBz7Yb8g}
+        startPage: ${SAMPLE_ELEARNING_CDN_START_PAGE:index.htm}
+      cdn-video:
+        url: ${SAMPLE_VIDEO_CDN_LOCATION:https://cdn.integration.learn.civilservice.gov.uk/lpgdevcontent/NutcujZkRrGYeY3K_S0Lag/QRWXybdbRzC4uTwNSZ5Tjw/welcome_video.mp4}
+  identity:
+    baseUrl: ${IDENTITY_BASE_URL:https://identity.integration.learn.civilservice.gov.uk}
+browser: Chrome
+users:
+  learner:
+    email: ${LEARNER_EMAIL:acceptance-learner@cabinetoffice.gov.uk}
+    password: ${LEARNER_PASSWORD:Z497B6kk9Lga}
+  admin:
+    email: ${ADMIN_EMAIL:acceptance-admin@cabinetoffice.gov.uk}
+    password: ${ADMIN_PASSWORD:Qj4NCM35&BxV}
+api:
+  elasticsearch:
+    baseUrl: ${ELASTIC_URL:https://elastic.integration.learn.civilservice.gov.uk:9200}
+    username: ${ELASTIC_USERNAME:elastic}
+    password: ${ELASTIC_PASSWORD:EzIXM@cCC%YfA*M3X1jd}
+db:
+  learner-record:
+    connection-string: ${LEARNER_RECORD_DB:jdbc:mysql://lpg-lpgintegration-gp.mysql.database.azure.com:3306/learner_record?user=mysqladminuser@lpg-lpgintegration-gp&password=stpFp0qAK1C3NiTm&useSSL=true&requireSSL=false}
+  identity:
+    connection-string: ${IDENTITY_RECORD_DB:jdbc:mysql://lpg-lpgintegration-gp.mysql.database.azure.com:3306/identity?user=mysqladminuser@lpg-lpgintegration-gp&password=stpFp0qAK1C3NiTm&useSSL=true&requireSSL=false}
+    user-password: ${GENERIC_USER_PASSWORD:Password123}
+  csrs:
+    connection-string: ${CSRS_DB:jdbc:mysql://lpg-lpgintegration-gp.mysql.database.azure.com:3306/csrs?user=mysqladminuser@lpg-lpgintegration-gp&password=stpFp0qAK1C3NiTm&useSSL=true&requireSSL=false}
+  mongo:
+    connection-string: ${MONGO_DB:mongodb://lpg-lpgintegration-cosmos:p5kApL1FJqNHUAAlTbCf3lTIbtser00FAmdRtF45DyLslYuAFSBEw4PcetZjxordRwc64dcwSFFudrM9hM4jrA==@lpg-lpgintegration-cosmos.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false}
+report:
+  dir: ${REPORT_DIR:report}
