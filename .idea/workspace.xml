@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71f13154-8806-4d35-87b7-2b57b23348fa" name="Changes" comment="Extent reports and adding waits for tests. Added more tests for optional modules">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/ElasticDBConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/ElasticsearchClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Audience.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/DateRange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/ELearningModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/EventModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/FileModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/LearningProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Module.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/ModuleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Owner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Venue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/AcceptanceTestsApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/CSRS/CsrsDBClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/DBConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/DbClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/Identity/IdentityDBClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/LearnerRecordDBClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/CourseRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/Learner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/ModuleRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearningLockerClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/Models/BookingState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/Models/CSLUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/Models/UserType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/Models/builder/BookingBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/annotation/LazyAutowired.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/annotation/LazyConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/ExtentReport/ExtentConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/ExtentReport/ExtentReporting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/ScreenShotter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/StaticWebDriverAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/WebDriverLibrary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/annotation/WebdriverScope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/annotation/WebdriverScopeBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/annotation/WebdriverScopeConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/annotation/WebdriverScopePostProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/files/dummy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/AcceptanceTestsApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/BaseDiscite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/CourseDiscite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/DisciteStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/EventDiscite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/LearningRecordTableRow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/Management/EventAttendeeListElem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/Management/ModuleContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/Management/ModuleItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/Management/ModuleListDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/ModuleDiscite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Data/AudienceCreationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Data/CourseData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Data/ModuleCreationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/SeleniumTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/CourseAdminSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/CourseCompletionSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/EventBookingSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/LearningPlanSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/SearchSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/Cache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/CourseManagementService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/FrontendCourseCreationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/LearnerRecordService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/LearningRecordUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/LoginUtilityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/SeleniumUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/UserManagementService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/extensions/ScreenshotExtension.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/BasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/CslIdentityBasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/SignUp/SignUpCodePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/SignUp/SignUpPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/SignUp/SignUpPasswordPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/SignUp/SignUpRequestPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/ContentManagementPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/CourseDetailsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/CourseTitlePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/CourseVisibilityPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddFaceToFaceModulePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddLinkModulePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddModuleBasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddModuleLandingPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddModuleLandingPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddUploadableModulePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseManagementOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CoursePreviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CslManagementBasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/AdminEventCancellationReason.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/CancelEventAttendeePage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/CancelEventAttendeePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/EventAttendeeOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/EventOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseCompletePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/CourseOverviewPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/CourseOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/ELearningCourseOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/EventCourseOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/FileCourseOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/LinkCourseOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/VideoCourseOverviewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CslUiBasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/LearningRecordPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/ELearning/BasicGomoPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/CancellationReason.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventAccessibilityRequirementsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventBookingRequestSubmittedPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventBookingSummaryPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventCancellationConfirmationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventCancellationPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventCancellationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventConfirmPaymentDetailsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventDateTimeLocationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventPaymentDetailsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/VideoModulePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/SuggestionsForYouPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/TestCreateAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/TestLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/admin/AdminTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/admin/TestEvents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/BaseLearnerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestCourseCompletion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestEvents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestLearningPlan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestOptionalModulesCourseCompletion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestRequiredLearning.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ByOUh1IaaiUv39VXPdFWZYWmXu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TF_FMT" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jamie\projects\acceptanceTests\src\test\java\uk\gov\cslearning\acceptanceTests\tests\learner" />
+      <recent name="C:\Users\jamie\projects\acceptanceTests\src\main\java\uk\gov\cslearning\acceptanceTests\repositories\CSRS" />
+      <recent name="C:\Users\jamie\projects\acceptanceTests\src\main\java\uk\gov\cslearning\acceptanceTests\repositories\Identity" />
+      <recent name="C:\Users\jamie\projects\acceptanceTests\src\main\java\uk\gov\cslearning\acceptanceTests\DB\Identity" />
+      <recent name="C:\Users\jamie\projects\acceptanceTests\src\main\java\uk\gov\cslearning\acceptanceTests\DB\LearnerRecord" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jamie\projects\acceptanceTests" />
+      <recent name="C:\Users\jamie\projects\acceptanceTests\src\test\resources" />
+      <recent name="C:\Users\jamie\projects\acceptanceTests\src\main\resources\files" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="uk.gov.cslearning.acceptanceTests" />
+      <recent name="uk.gov.cslearning.acceptanceTests.pages.CslUi.Modules" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="uk.gov.cslearning.acceptanceTests.tests.learner" />
+      <recent name="uk.gov.cslearning.acceptanceTests.libs.webDriver" />
+      <recent name="uk.gov.cslearning.acceptanceTests.tests.admin" />
+      <recent name="uk.gov.cslearning.acceptanceTests.pages.CslManagement" />
+      <recent name="uk.gov.cslearning.acceptanceTests.pages.CslUi.Modules.Event" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.Dockerfile">
+    <configuration name="TestEvents.testSignupForFreeEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acceptanceTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.tests.learner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner" />
+      <option name="MAIN_CLASS_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner.TestEvents" />
+      <option name="METHOD_NAME" value="testSignupForFreeEvent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOptionalModulesCourseCompletion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acceptanceTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.tests.learner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner" />
+      <option name="MAIN_CLASS_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner.TestOptionalModulesCourseCompletion" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="acceptanceTests" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uk.gov.cslearning.acceptanceTests.tests.learner in acceptanceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acceptanceTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.tests.learner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AcceptanceTestsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="csl-acceptance-tests" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uk.gov.cslearning.acceptanceTests.AcceptanceTestsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AcceptanceTestsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="acceptanceTests" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uk.gov.cslearning.acceptanceTests.AcceptanceTestsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="JUnit.TestOptionalModulesCourseCompletion" />
+      <item itemvalue="JUnit.uk.gov.cslearning.acceptanceTests.tests.learner in acceptanceTests" />
+      <item itemvalue="JUnit.TestEvents.testSignupForFreeEvent" />
+      <item itemvalue="Spring Boot.AcceptanceTestsApplication" />
+      <item itemvalue="Spring Boot.AcceptanceTestsApplication (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="JUnit.TestOptionalModulesCourseCompletion" />
+        <item itemvalue="JUnit.TestEvents.testSignupForFreeEvent" />
+        <item itemvalue="JUnit.uk.gov.cslearning.acceptanceTests.tests.learner in acceptanceTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71f13154-8806-4d35-87b7-2b57b23348fa" name="Changes" comment="" />
+      <created>1657874885396</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657874885396</updated>
+      <workItem from="1657874887344" duration="198000" />
+      <workItem from="1657875107137" duration="384000" />
+      <workItem from="1657875681322" duration="225000" />
+      <workItem from="1657875964563" duration="281000" />
+      <workItem from="1657876262318" duration="11716000" />
+      <workItem from="1658131132818" duration="92192000" />
+      <workItem from="1658473708909" duration="149031000" />
+      <workItem from="1659435730136" duration="21437000" />
+      <workItem from="1659538500474" duration="11959000" />
+      <workItem from="1659617372471" duration="6240000" />
+      <workItem from="1659625277604" duration="22510000" />
+      <workItem from="1659940310451" duration="30991000" />
+      <workItem from="1660049423709" duration="4164000" />
+      <workItem from="1660055651992" duration="398000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added tests for completing courses and moving courses around in learning plan / suggested learning.">
+      <created>1658832650035</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658832650035</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Finished required learning and added Events code">
+      <created>1659009749070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659009749070</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Replaced SQL code with norm">
+      <created>1659011930701</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659011930701</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added event tests">
+      <created>1659344807927</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659344807927</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added screenshot capability, fixed remaining broken tests">
+      <created>1659528556811</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659528556811</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Extent reports and adding waits for tests. Added more tests for optional modules">
+      <created>1660055283594</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660055283595</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Extent reports and adding waits for tests. Added more tests for optional modules">
+      <created>1660055362780</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660055362780</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added tests for completing courses and moving courses around in learning plan / suggested learning." />
+    <MESSAGE value="Finished required learning and added Events code" />
+    <MESSAGE value="Replaced SQL code with norm" />
+    <MESSAGE value="Added event tests" />
+    <MESSAGE value="Added screenshot capability, fixed remaining broken tests" />
+    <MESSAGE value="Extent reports and adding waits for tests" />
+    <MESSAGE value="Extent reports and adding waits for tests. Added more tests for optional modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extent reports and adding waits for tests. Added more tests for optional modules" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uk/gov/cslearning/acceptanceTests/pages/CslUi/SuggestionsForYouPage.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uk/gov/cslearning/acceptanceTests/tests/learner/TestOptionalModulesCourseCompletion.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.web.reactive.function.client.DefaultWebClient" memberName="builder" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
