@@ -16,8 +16,11 @@ import java.util.HashMap;
 @LazyConfiguration
 public class WebDriverLibrary {
 
-    @Value("${browser}")
+    @Value("${browser.name}")
     private String webBrowser;
+
+    @Value("${browser.headless}")
+    private boolean headlessBrowser;
 
     @Bean
     @WebdriverScopeBean
@@ -30,12 +33,14 @@ public class WebDriverLibrary {
                 chromeOptions.addArguments("disable-infobars");
                 chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 
-                chromeOptions.addArguments("--disable-gpu");
-                chromeOptions.addArguments("--disable-extensions");
-                chromeOptions.addArguments("--no-sandbox");
-                chromeOptions.addArguments("--disable-dev-shm-usage");
-                chromeOptions.addArguments("--headless");
-                chromeOptions.addArguments("--window-size=1580,1280");
+                if (headlessBrowser) {
+                    chromeOptions.addArguments("--disable-gpu");
+                    chromeOptions.addArguments("--disable-extensions");
+                    chromeOptions.addArguments("--no-sandbox");
+                    chromeOptions.addArguments("--disable-dev-shm-usage");
+                    chromeOptions.addArguments("--headless");
+                    chromeOptions.addArguments("--window-size=1580,1280");
+                }
 
                 final HashMap<String, Object> prefs = new HashMap();
                 prefs.put("credentials_enable_service", false);

@@ -21,7 +21,7 @@ public class ScreenshotExtension implements AfterAllCallback, AfterTestExecution
             ExtentReporting.extentTest.fail(extensionContext.getExecutionException().get());
             ExtentReporting.extentTest.addScreenCaptureFromPath("./screenshots/" + screenshotName);
         } else {
-            ExtentReporting.extentTest.pass(testName + " - passed");
+            ExtentReporting.extentTest.pass(String.format("TEST PASSED - \"%s\"", testName));
         }
     }
 
@@ -29,7 +29,7 @@ public class ScreenshotExtension implements AfterAllCallback, AfterTestExecution
     public void beforeTestExecution(ExtensionContext extensionContext) throws Exception {
         String testName = extensionContext.getDisplayName();
         ExtentReporting.extentTest = ExtentReporting.extentReports.createTest(testName);
-        ExtentReporting.extentTest.log(Status.INFO, testName + " - started");
+        ExtentReporting.extentTest.log(Status.INFO, String.format("TEST STARTED - \"%s\"", testName));
     }
 
     @Override

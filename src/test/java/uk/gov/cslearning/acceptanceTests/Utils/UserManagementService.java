@@ -5,10 +5,13 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import uk.gov.cslearning.acceptanceTests.DB.CSRS.CsrsDBClient;
 import uk.gov.cslearning.acceptanceTests.DB.Identity.IdentityDBClient;
+import uk.gov.cslearning.acceptanceTests.DB.Identity.model.Reactivation;
 import uk.gov.cslearning.acceptanceTests.Models.CSLUser;
 import uk.gov.cslearning.acceptanceTests.Models.UserType;
 
 import javax.annotation.PostConstruct;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 @Service
@@ -50,6 +53,10 @@ public class UserManagementService {
         users.forEach(u -> identityDBClient.deleteTokensForUser(u.uid));
     }
 
+    public void teardownReactivations(String email) {
+        identityDBClient.deleteReactivations(email);
+    }
+
     public CSLUser getUser(UserType type) {
         return userMap.get(type);
     }
@@ -63,6 +70,31 @@ public class UserManagementService {
         String departmentCode = csrsDBClient.getCivilServantDepCode(uid);
         String gradeCode = csrsDBClient.getCivilServantGradeCode(uid);
         return new CSLUser(email, password, uid, departmentCode, gradeCode, type);
+    }
+
+    public String createReactivationForUser(CSLUser user, LocalDateTime requestedAt) {
+        String code = "TEST";
+        Reactivation reac = new Reactivation(
+                code,
+                user.email,
+                "PENDING",
+                requestedAt,
+                null
+        );
+        identityDBClient.createReactivation(reac);
+        return code;
+    }
+
+    public String getReactivationCode(String email) {
+        return identityDBClient.getReactivationCode(email);
+    }
+
+    public void deactivateUser(CSLUser user) {
+        identityDBClient.setActivated(user.uid, false);
+    }
+
+    public void activateUser(CSLUser user) {
+        identityDBClient.setActivated(user.uid, true);
     }
 
     public String getSignupCodeForUser(String email) {

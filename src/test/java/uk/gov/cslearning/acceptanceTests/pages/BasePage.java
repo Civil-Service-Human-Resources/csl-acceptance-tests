@@ -1,5 +1,6 @@
 package uk.gov.cslearning.acceptanceTests.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -29,6 +30,20 @@ public abstract class BasePage {
 
     public void assertHeading(String expected) {
         Assert.isTrue(heading.getText().equals(expected), String.format("Heading was expected to be '%s' but was '%s'", expected, heading.getText()));
+    }
+
+    public void assertTextExact(String expectedText, WebElement elem) {
+        String actualText = elem.getText();
+        Assert.isTrue(expectedText.equals(actualText), String.format("Expected to find '%s' text on element '%s' but found '%s'", expectedText, elem.getTagName(), actualText));
+    }
+
+    public void assertTextExactIgnoreCase(String expectedText, WebElement elem) {
+        String actualText = elem.getText();
+        Assert.isTrue(expectedText.equalsIgnoreCase(actualText), String.format("Expected to find '%s' text but found '%s' (ignoring case)", expectedText, actualText));
+    }
+
+    public void clickLink(String linkText) {
+        driver.findElement(By.linkText(linkText)).click();
     }
 
     public void refresh() {

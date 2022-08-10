@@ -4,6 +4,7 @@ import com.dieselpoint.norm.Database;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import uk.gov.cslearning.acceptanceTests.DB.DbClient;
+import uk.gov.cslearning.acceptanceTests.DB.Identity.model.Reactivation;
 
 import java.sql.Connection;
 
@@ -21,12 +22,28 @@ public class IdentityDBClient extends DbClient {
         return dbConnection;
     }
 
+    public void createReactivation(Reactivation reactivation) {
+        dbConnection.insert(reactivation);
+    }
+
+    public String getReactivationCode(String email) {
+        return dbConnection.sql("select code from reactivation where email=?", email).first(String.class);
+    }
+
     /*
     * Delete any invites for the user as well as their identity
     * */
     public void fullyDeleteIdentity(String email) {
         deleteIdentity(email);
         deleteInvite(email);
+    }
+
+    public void setActivated(String uid, boolean active) {
+        dbConnection.table("identity").sql("update identity set active = ? where uid = ?", active ? 1 : 0, uid).execute();
+    }
+
+    public void deleteReactivations(String email)  {
+        dbConnection.table("reactivation").where("email=?", email).delete();
     }
 
     public void deleteIdentity(String email) {

@@ -23,7 +23,9 @@ pages:
         url: ${SAMPLE_VIDEO_CDN_LOCATION:}
   identity:
     baseUrl: ${IDENTITY_BASE_URL:http://localhost:8080}
-browser: Chrome
+browser:
+  name: Chrome
+  headless: ${BROWSER_HEADLESS_MODE:true}
 users:
   learner:
     email: ${LEARNER_EMAIL:learner@domain.com}

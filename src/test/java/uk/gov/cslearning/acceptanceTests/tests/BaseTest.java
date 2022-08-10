@@ -1,5 +1,7 @@
 package uk.gov.cslearning.acceptanceTests.tests;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.Status;
 import lombok.Getter;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -13,6 +15,7 @@ import uk.gov.cslearning.acceptanceTests.SeleniumTest;
 import uk.gov.cslearning.acceptanceTests.Utils.*;
 import uk.gov.cslearning.acceptanceTests.annotation.LazyAutowired;
 import uk.gov.cslearning.acceptanceTests.extensions.ScreenshotExtension;
+import uk.gov.cslearning.acceptanceTests.libs.ExtentReport.ExtentReporting;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
@@ -56,13 +59,7 @@ public class BaseTest {
         userManagementService.teardownTokens();
     }
 
-    @LazyAutowired
-    public ApplicationContext applicationContext;
-
-//    @AfterEach
-//    public void teardown() {
-//        this.applicationContext
-//                .getBean(WebDriver.class)
-//                .quit();
-//    }
+    protected void testLog(String message) {
+        ExtentReporting.extentTest.log(Status.INFO, message);
+    }
 }
