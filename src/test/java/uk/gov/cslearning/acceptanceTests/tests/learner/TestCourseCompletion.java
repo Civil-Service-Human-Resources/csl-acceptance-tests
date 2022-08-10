@@ -8,7 +8,7 @@ import uk.gov.cslearning.acceptanceTests.API.CourseDB.model.ELearningModule;
 import uk.gov.cslearning.acceptanceTests.API.CourseDB.model.FileModule;
 import uk.gov.cslearning.acceptanceTests.Data.ModuleCreationService;
 import uk.gov.cslearning.acceptanceTests.API.CourseDB.model.Module;
-import uk.gov.cslearning.acceptanceTests.SeleniumTest;
+import uk.gov.cslearning.acceptanceTests.annotations.SeleniumTest;
 import uk.gov.cslearning.acceptanceTests.Steps.CourseCompletionSteps;
 import uk.gov.cslearning.acceptanceTests.Utils.*;
 import uk.gov.cslearning.acceptanceTests.pages.CslUi.CourseCompletePage;

@@ -3,7 +3,7 @@ package uk.gov.cslearning.acceptanceTests.tests;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import uk.gov.cslearning.acceptanceTests.SeleniumTest;
+import uk.gov.cslearning.acceptanceTests.annotations.SeleniumTest;
 import uk.gov.cslearning.acceptanceTests.Utils.LoginUtilityService;
 import uk.gov.cslearning.acceptanceTests.Utils.UserManagementService;
 import uk.gov.cslearning.acceptanceTests.pages.CslIdentity.LoginPage;
