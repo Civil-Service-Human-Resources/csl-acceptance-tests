@@ -1,4 +1,4 @@
-*.png
+report
 .env
-*.html
 .idea
+target
