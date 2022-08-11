@@ -1,0 +1,27 @@
+trigger:
+  branches:
+    include:
+      - main
+      - idt-develop
+      - idt-feature-LC-*
+pool:
+  vmImage: ubuntu-latest
+steps:
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'validate'
+      options: '-DskipTests'
+      publishJUnitResults: false
+      jdkVersionOption: 1.17
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+      includeRootFolder: true
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      replaceExistingArchive: true
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      ArtifactName: proj
