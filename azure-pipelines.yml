@@ -16,5 +16,5 @@ steps:
       jdkVersionOption: 1.17
   - task: PublishBuildArtifacts@1
     inputs:
-      TargetPath: $(System.DefaultWorkingDirectory)/target/cslAcceptanceTests.jar
+      PathtoPublish: '$(System.DefaultWorkingDirectory)/target/cslAcceptanceTests.jar'
       ArtifactName: jar
