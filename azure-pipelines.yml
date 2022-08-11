@@ -1,0 +1,19 @@
+trigger:
+  branches:
+    include:
+      - master
+      - idt-develop
+      - idt-feature-LC-*
+pool:
+  vmImage: ubuntu-latest
+steps:
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'package'
+      options: '-DskipTests'
+      publishJUnitResults: false
+  - task: PublishBuildArtifacts@1
+    inputs:
+      TargetPath: $(System.DefaultWorkingDirectory)/target/cslAcceptanceTests.jar
+      ArtifactName: jar
