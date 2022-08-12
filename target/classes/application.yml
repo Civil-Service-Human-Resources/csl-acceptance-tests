@@ -2,7 +2,7 @@ pages:
   csl-ui:
     baseUrl: ${CSL_UI_BASE_URL:http://localhost:3001}
     modules:
-      baseUrl: ${CONTENT_CDN_BASE_URL}
+      baseUrl: ${CONTENT_CDN_BASE_URL:}
       video:
         load-timeout: ${VIDEO_MODULE_LOAD_TIMEOUT_MS:3000}
       file:
