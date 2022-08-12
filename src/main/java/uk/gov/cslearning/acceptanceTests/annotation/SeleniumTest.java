@@ -7,6 +7,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import uk.gov.cslearning.acceptanceTests.AcceptanceTestsApplication;
+import uk.gov.cslearning.acceptanceTests.junitExtensions.GlobalDataExtension;
 import uk.gov.cslearning.acceptanceTests.junitExtensions.ScreenshotExtension;
 
 
@@ -20,6 +21,5 @@ import java.lang.annotation.Target;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = AcceptanceTestsApplication.class)
 @ExtendWith(ScreenshotExtension.class)
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public @interface SeleniumTest {
 }

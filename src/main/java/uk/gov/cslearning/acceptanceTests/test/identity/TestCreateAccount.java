@@ -12,11 +12,7 @@ import uk.gov.cslearning.acceptanceTests.page.CslIdentity.SignUp.SignUpRequestPa
 import uk.gov.cslearning.acceptanceTests.util.LoginUtilityService;
 import uk.gov.cslearning.acceptanceTests.util.UserManagementService;
 
-@SeleniumTest
 public class TestCreateAccount extends IdentityTests {
-
-    String email = "acceptance-test@cabinetoffice.gov.uk";
-    String password = "Password123";
 
     @Autowired
     LoginPage loginPage;
@@ -39,14 +35,11 @@ public class TestCreateAccount extends IdentityTests {
     @Autowired
     LoginUtilityService loginUtilityService;
 
-    @AfterAll
-    public void afterAll() {
-        userManagementService.deleteUser(email);
-    }
-
     @Test
     public void testAccountCreationSuccess() {
-        loginUtilityService.trySignOut();
+        String email = "acceptance-test@cabinetoffice.gov.uk";
+        String password = "Password123";
+        loginUtilityService.signOut();
         loginPage.navigateTo();
         loginPage.goToCreateAccount();
         signUpPage.signUp(email);
@@ -55,6 +48,7 @@ public class TestCreateAccount extends IdentityTests {
         signUpCodePage.navigateTo(signupCode);
         signUpPasswordPage.completeSignup(password);
         signUpPasswordPage.assertHeading("Password creation complete");
+        userManagementService.deleteUser(email);
     }
 
 

@@ -68,7 +68,7 @@ public abstract class BasePage {
     }
 
     public void navigate(String url) {
-        log.debug(String.format("Going to %s", url));
+        log.info(String.format("Going to %s", url));
         this.driver.navigate().to(url);
         if (this.heading.getText().equalsIgnoreCase("sorry, there is a problem with this service")) {
             throw new RuntimeException("Page failed to load");

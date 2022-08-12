@@ -14,27 +14,20 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-@Component
+
 @Slf4j
 public class ScreenShotter {
 
-    private static WebDriver driver;
+    private final WebDriver driver;
 
-    @Value("${report.dir}")
-    public String reportDir;
+    private final String screenshotDir;
 
-    private static String screenshotDir;
-
-    @Value("${report.dir}")
-    public void setScreenshotDir(String reportDir) {
-        ScreenShotter.screenshotDir = reportDir + "/" + "screenshots";
+    public ScreenShotter(String screenshotDir, WebDriver driver) {
+        this.screenshotDir = screenshotDir;
+        this.driver = driver;
     }
 
-    public ScreenShotter(WebDriver driver) {
-        ScreenShotter.driver = driver;
-    }
-
-    public static String takeScreenshot(String testName) throws IOException {
+    public String takeScreenshot(String testName) throws IOException {
         String date = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE);
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String screenshotName = String.format("%s-%s.png", testName, date);
@@ -47,4 +40,18 @@ public class ScreenShotter {
             throw e;
         }
     }
+
+//    public static String takeScreenshot(String testName) throws IOException {
+//        String date = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE);
+//        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//        String screenshotName = String.format("%s-%s.png", testName, date);
+//        String screenshotFullDir = String.format("%s/%s", screenshotDir, screenshotName);
+//        try {
+//            FileUtils.copyFile(screenshotFile, new File(screenshotFullDir));
+//            return screenshotName;
+//        } catch (IOException e) {
+//            log.error(String.format("Error when creating screenshot for test method '%s': %s", testName, e.getMessage()));
+//            throw e;
+//        }
+//    }
 }

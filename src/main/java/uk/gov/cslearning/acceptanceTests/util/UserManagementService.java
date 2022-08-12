@@ -1,5 +1,6 @@
 package uk.gov.cslearning.acceptanceTests.util;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 @Service
+@Slf4j
 public class UserManagementService {
 
     @Value("${users.learner.email}")
@@ -57,6 +59,7 @@ public class UserManagementService {
     }
 
     public void teardownReactivations(String email) {
+        log.info(String.format("Tearing reactivations down for email \"%s\"", email));
         identityDBClient.deleteReactivations(email);
     }
 

@@ -15,8 +15,6 @@ import uk.gov.cslearning.acceptanceTests.util.LoginUtilityService;
 
 import java.util.List;
 
-
-@SeleniumTest
 @Slf4j
 public class TestOptionalModulesCourseCompletion extends BaseLearnerTest {
 

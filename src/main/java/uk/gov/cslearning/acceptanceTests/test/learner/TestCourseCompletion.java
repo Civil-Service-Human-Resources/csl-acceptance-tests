@@ -17,8 +17,6 @@ import uk.gov.cslearning.acceptanceTests.util.LoginUtilityService;
 import java.time.LocalDateTime;
 import java.util.List;
 
-
-@SeleniumTest
 @Slf4j
 public class TestCourseCompletion extends BaseLearnerTest {
 

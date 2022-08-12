@@ -5,7 +5,7 @@ import lombok.Getter;
 import org.junit.jupiter.api.AfterAll;
 import org.springframework.beans.factory.annotation.Autowired;
 import uk.gov.cslearning.acceptanceTests.annotation.SeleniumTest;
-import uk.gov.cslearning.acceptanceTests.libs.ExtentReport.ExtentReporting;
+import uk.gov.cslearning.acceptanceTests.libs.ExtentReport.ExtentReporter;
 import uk.gov.cslearning.acceptanceTests.util.*;
 
 import javax.annotation.PostConstruct;
@@ -14,6 +14,9 @@ import java.time.LocalDateTime;
 @SeleniumTest
 @Getter
 public class BaseTest {
+
+    @Autowired
+    ExtentReporter extentReporter;
 
     @Autowired
     protected Cache cache;
@@ -44,13 +47,10 @@ public class BaseTest {
         tomorrow = learningRecordUtils.getTomorrow();
     }
 
-    @AfterAll
-    public void after() {
-        courseManagementService.cleanUpCourses();
-        userManagementService.teardownTokens();
-    }
+//    @AfterAll
+//    public void after() {
+//        courseManagementService.cleanUpCourses();
+//        userManagementService.teardownTokens();
+//    }
 
-    protected void testLog(String message) {
-        ExtentReporting.extentTest.log(Status.INFO, message);
-    }
 }

@@ -20,7 +20,6 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 
-@SeleniumTest
 public class TestEvents extends AdminTests {
 
     @Autowired
@@ -52,7 +51,6 @@ public class TestEvents extends AdminTests {
         learnerRecordService.createRequestedBooking(learner, event, today, null);
         learnerRecordService.insertCourseRecord(course, learner, today, "REGISTERED");
         learnerRecordService.insertRequestedBookedModuleRecord(eventModule, learner, event, course.id, today);
-//        loginUtilityService.switchToType(UserType.ADMIN);
         courseAdminSteps.approveBookingRequest(course.id, eventModule.title, event, learner.email);
         loginUtilityService.switchToType(UserType.LEARNER);
         homePage.assertEventConfirmed(eventModule.title);
@@ -69,7 +67,6 @@ public class TestEvents extends AdminTests {
         learnerRecordService.createRequestedBooking(learner, event, today, null);
         learnerRecordService.insertCourseRecord(course, learner, today, "REGISTERED");
         learnerRecordService.insertRequestedBookedModuleRecord(eventModule, learner, event, course.id, today);
-//        loginUtilityService.switchToType(UserType.ADMIN);
         courseAdminSteps.cancelBookingRequest(course.id, eventModule.title, event, learner.email);
         loginUtilityService.switchToType(UserType.LEARNER);
         homePage.assertEventCancelled(eventModule.title);

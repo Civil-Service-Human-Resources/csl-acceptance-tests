@@ -7,13 +7,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import uk.gov.cslearning.acceptanceTests.annotation.LazyConfiguration;
 import uk.gov.cslearning.acceptanceTests.libs.webDriver.annotation.WebdriverScopeBean;
 
 import java.util.Collections;
 import java.util.HashMap;
 
-@LazyConfiguration
+@Configuration
 public class WebDriverLibrary {
 
     @Value("${browser.name}")

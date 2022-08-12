@@ -32,15 +32,16 @@ public class LoginPage extends CslIdentityBasePage {
         usernameTxt.sendKeys(username);
         passwordTxt.sendKeys(password);
         loginBtn.click();
-//        boolean loggedIn = false;
-//        while(!loggedIn) {
-//            try {
-//                loggedIn = driver.findElement(By.linkText("Sign out")).isDisplayed();
-//            } catch (NoSuchElementException e) {
-//                wait(1000);
-//                System.out.println("Waiting for sign out button");
-//            }
-//        }
+    }
+
+    public String getLoginError() {
+        try {
+            errorSummaryDiv.isDisplayed();
+            errorHeadingyH.isDisplayed();
+            return errorSummaryDiv.getText();
+        } catch (NoSuchElementException e) {
+            return "";
+        }
     }
 
     public void assertError(String expectedHeading, String expectedMessage) {

@@ -49,26 +49,28 @@ public class LoginUtilityService {
     private void login(CSLUser user) {
         loginPage.navigateTo();
         loginPage.login(user.email, user.password);
+        String loginError = loginPage.getLoginError();
+        if (!loginError.isEmpty()) {
+            throw new RuntimeException(String.format("Error logging in: \"%s\"", loginError));
+        }
         cache.setCurrentUser(user);
     }
 
-    public void trySignOut() {
+    public void signOut() {
         try {
             log.info("trying to log out");
-            signOut();
+            WebElement signOutLink = driver.findElement(By.linkText("Sign out"));
+            signOutLink.click();
         } catch (NoSuchElementException e) {
             log.info("Sign out button not found.");
         }
-    }
-
-    public void signOut() {
-        WebElement signOutLink = driver.findElement(By.linkText("Sign out"));
-        signOutLink.click();
         cache.clearCurrentUser();
     }
 
     public synchronized void switchToType(UserType type) {
-        if (cache.getCurrentUser() == null || !cache.getCurrentUser().type.equals(type)) {
+        if (!homePage.isSignedIn() &&
+                cache.getCurrentUser() == null ||
+                !cache.getCurrentUser().type.equals(type)) {
             log.info(String.format("Switching user to type %s", type.toString()));
             CSLUser user = userManagementService.getUser(type);
             if (user == null) {
@@ -76,7 +78,7 @@ public class LoginUtilityService {
             }
             switchUser(user);
         } else {
-            log.info(String.format("Didn't need to switch to type %s", type.toString()));
+            log.info(String.format("Didn't need to switch to type %s", type));
         }
     }
 
