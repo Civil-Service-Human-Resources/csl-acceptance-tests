@@ -1,5 +1,6 @@
 package uk.gov.cslearning.acceptanceTests.API.CourseDB;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
@@ -7,6 +8,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import uk.gov.cslearning.acceptanceTests.API.CourseDB.model.Course;
 
 @Service
+@Slf4j
 public class ElasticsearchClient {
 
     private final WebClient elasticClient;
@@ -21,7 +23,7 @@ public class ElasticsearchClient {
                 .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(course)
                 .exchangeToMono(r -> {
-                    System.out.println(r.statusCode());
+                    log.debug(String.format("Elasticsearch response: %s", r.statusCode()));
                     if (!r.statusCode().isError()) {
                         return r.bodyToMono(String.class);
                     }
@@ -36,7 +38,7 @@ public class ElasticsearchClient {
         elasticClient.delete()
                 .uri(String.format("/courses/course/%s", courseId))
                 .exchangeToMono(r -> {
-                    System.out.println(r.statusCode());
+                    log.debug(String.format("Elasticsearch response: %s", r.statusCode()));
                     if (!r.statusCode().isError()) {
                         return r.bodyToMono(String.class);
                     }
@@ -54,7 +56,7 @@ public class ElasticsearchClient {
                 .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(query)
                 .exchangeToMono(r -> {
-                    System.out.println(r.statusCode());
+                    log.debug(String.format("Elasticsearch response: %s", r.statusCode()));
                     if (!r.statusCode().isError()) {
                         return r.bodyToMono(String.class);
                     }

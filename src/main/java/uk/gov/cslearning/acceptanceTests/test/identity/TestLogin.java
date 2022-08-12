@@ -1,6 +1,7 @@
-package uk.gov.cslearning.acceptanceTests.test;
+package uk.gov.cslearning.acceptanceTests.test.identity;
 
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +11,11 @@ import uk.gov.cslearning.acceptanceTests.annotation.SeleniumTest;
 import uk.gov.cslearning.acceptanceTests.page.CslIdentity.LoginPage;
 import uk.gov.cslearning.acceptanceTests.page.CslIdentity.ReactivationPage;
 import uk.gov.cslearning.acceptanceTests.page.CslUi.HomePage;
+import uk.gov.cslearning.acceptanceTests.test.BaseTest;
 
 
 @SeleniumTest
-public class TestLogin extends BaseTest {
+public class TestLogin extends IdentityTests {
 
     @Autowired
     HomePage homepage;
@@ -28,7 +30,6 @@ public class TestLogin extends BaseTest {
     public void afterAll() {
         CSLUser user = userManagementService.getUser(UserType.LEARNER);
         loginUtilityService.trySignOut();
-        userManagementService.activateUser(user);
         userManagementService.teardownReactivations(user.email);
     }
 
@@ -51,6 +52,7 @@ public class TestLogin extends BaseTest {
                 "Your account has been deactivated",
                 "You will need to reactivate your account to keep using Civil Service Learning."
         );
+        userManagementService.activateUser(user);
     }
 
     @DisplayName("Test that the correct message is shown for a deactivated account with a pending reactivation")

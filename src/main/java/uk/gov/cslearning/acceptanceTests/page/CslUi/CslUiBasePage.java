@@ -1,5 +1,6 @@
 package uk.gov.cslearning.acceptanceTests.page.CslUi;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -42,7 +43,12 @@ public class CslUiBasePage extends BasePage {
     }
 
     public boolean isSignedIn() {
-        return signOutLink.isDisplayed();
+        try {
+            signOutLink.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+        return true;
     }
 
 }

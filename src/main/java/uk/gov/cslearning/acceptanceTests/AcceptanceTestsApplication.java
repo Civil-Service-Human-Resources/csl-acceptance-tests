@@ -15,11 +15,13 @@ import static org.junit.platform.engine.discovery.DiscoverySelectors.selectPacka
 @SpringBootTest
 public class AcceptanceTestsApplication {
 
+	private static final String testPackage = "uk.gov.cslearning.acceptanceTests.test";
+
 	public static void main(String[] args) {
 
 		final LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request()
 				.selectors(
-						selectPackage("test")
+						selectPackage(testPackage)
 				)
 				.build();
 

@@ -1,6 +1,7 @@
 package uk.gov.cslearning.acceptanceTests.page.CslIdentity;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -31,6 +32,15 @@ public class LoginPage extends CslIdentityBasePage {
         usernameTxt.sendKeys(username);
         passwordTxt.sendKeys(password);
         loginBtn.click();
+//        boolean loggedIn = false;
+//        while(!loggedIn) {
+//            try {
+//                loggedIn = driver.findElement(By.linkText("Sign out")).isDisplayed();
+//            } catch (NoSuchElementException e) {
+//                wait(1000);
+//                System.out.println("Waiting for sign out button");
+//            }
+//        }
     }
 
     public void assertError(String expectedHeading, String expectedMessage) {

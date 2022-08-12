@@ -1,10 +1,10 @@
 package uk.gov.cslearning.acceptanceTests.annotation;
 
-import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.ClassOrderer;
+import org.junit.jupiter.api.TestClassOrder;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import uk.gov.cslearning.acceptanceTests.AcceptanceTestsApplication;
 import uk.gov.cslearning.acceptanceTests.junitExtensions.ScreenshotExtension;

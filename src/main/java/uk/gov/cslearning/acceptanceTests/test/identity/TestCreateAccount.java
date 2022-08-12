@@ -1,4 +1,4 @@
-package uk.gov.cslearning.acceptanceTests.test;
+package uk.gov.cslearning.acceptanceTests.test.identity;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ import uk.gov.cslearning.acceptanceTests.util.LoginUtilityService;
 import uk.gov.cslearning.acceptanceTests.util.UserManagementService;
 
 @SeleniumTest
-public class TestCreateAccount {
+public class TestCreateAccount extends IdentityTests {
 
     String email = "acceptance-test@cabinetoffice.gov.uk";
     String password = "Password123";

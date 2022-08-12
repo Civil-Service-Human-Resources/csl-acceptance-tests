@@ -1,5 +1,6 @@
 package uk.gov.cslearning.acceptanceTests.page;
 
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,7 @@ import org.springframework.util.Assert;
 import javax.annotation.PostConstruct;
 import java.time.format.DateTimeFormatter;
 
+@Slf4j
 public abstract class BasePage {
 
     protected final DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd MMM yyyy");
@@ -66,6 +68,7 @@ public abstract class BasePage {
     }
 
     public void navigate(String url) {
+        log.debug(String.format("Going to %s", url));
         this.driver.navigate().to(url);
         if (this.heading.getText().equalsIgnoreCase("sorry, there is a problem with this service")) {
             throw new RuntimeException("Page failed to load");

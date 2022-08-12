@@ -38,8 +38,6 @@ public class LoginUtilityService {
 
     final UserManagementService userManagementService;
 
-    Lock userLock = new ReentrantLock();
-
     public LoginUtilityService(WebDriver driver, Cache cache, LoginPage loginPage, HomePage homePage, UserManagementService userManagementService) {
         this.driver = driver;
         this.cache = cache;
@@ -56,6 +54,7 @@ public class LoginUtilityService {
 
     public void trySignOut() {
         try {
+            log.info("trying to log out");
             signOut();
         } catch (NoSuchElementException e) {
             log.info("Sign out button not found.");
@@ -68,21 +67,16 @@ public class LoginUtilityService {
         cache.clearCurrentUser();
     }
 
-    public void switchToType(UserType type) {
-        userLock.lock();
-        try {
-            if (cache.getCurrentUser() == null || !cache.getCurrentUser().type.equals(type)) {
-                log.info(String.format("Switching user to type %s", type.toString()));
-                CSLUser user = userManagementService.getUser(type);
-                if (user == null) {
-                    throw new RuntimeException(String.format("User of type %s does not exist in the cache", type));
-                }
-                switchUser(user);
-            } else {
-                log.info(String.format("Didn't need to switch to type %s", type.toString()));
+    public synchronized void switchToType(UserType type) {
+        if (cache.getCurrentUser() == null || !cache.getCurrentUser().type.equals(type)) {
+            log.info(String.format("Switching user to type %s", type.toString()));
+            CSLUser user = userManagementService.getUser(type);
+            if (user == null) {
+                throw new RuntimeException(String.format("User of type %s does not exist in the cache", type));
             }
-        } finally {
-            userLock.unlock();
+            switchUser(user);
+        } else {
+            log.info(String.format("Didn't need to switch to type %s", type.toString()));
         }
     }
 
