@@ -6,7 +6,7 @@ pages:
       video:
         load-timeout: ${VIDEO_MODULE_LOAD_TIMEOUT_MS:3000}
       file:
-        load-timeout: ${FILE_MODULE_LOAD_TIMEOUT_MS:1000}
+        load-timeout: ${FILE_MODULE_LOAD_TIMEOUT_MS:2000}
       elearning:
         load-timeout: ${ELEARNING_MODULE_LOAD_TIMEOUT_MS:3000}
   csl-management:
@@ -25,10 +25,10 @@ pages:
     baseUrl: ${IDENTITY_BASE_URL:http://localhost:8080}
 browser:
   name: Chrome
-  headless: ${BROWSER_HEADLESS_MODE:true}
+  headless: ${BROWSER_HEADLESS_MODE:false}
 users:
   learner:
-    email: ${LEARNER_EMAIL:learner@domain.com}
+    email: ${LEARNER_EMAIL:super-admin@domain.com}
     password: ${LEARNER_PASSWORD:test}
   admin:
     email: ${ADMIN_EMAIL:super-admin@domain.com}

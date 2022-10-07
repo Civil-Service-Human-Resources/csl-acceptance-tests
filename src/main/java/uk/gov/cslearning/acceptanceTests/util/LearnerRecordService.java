@@ -47,6 +47,8 @@ public class LearnerRecordService {
         return new BookingBuilder(learnerId, eventId, bookingTime, RandomStringUtils.randomAlphanumeric(5));
     }
 
+    // BOOKINGS
+
     public void createConfirmedBooking(CSLUser user, Event event, LocalDateTime bookingTime, @Nullable String poNumber) {
         LocalDateTime confirmedDate = bookingTime.plus(1, ChronoUnit.DAYS);
         Booking b = getGenericPartialBooking(user, event, bookingTime)
@@ -65,6 +67,18 @@ public class LearnerRecordService {
         dbClient.insertBooking(b);
     }
 
+    public void createConfirmedBookingWithCourseRecord(CSLUser user, Course course, Event event, Module eventModule, LocalDateTime bookedDate) {
+        createConfirmedBooking(user, event, bookedDate, null);
+        insertCourseRecord(course, user, bookedDate, "APPROVED");
+        insertConfirmedBookedModuleRecord(eventModule, user, event, course.id, bookedDate);
+    }
+
+    public void createCancelledBookingWithCourseRecord(CSLUser user, Course course, Event event, Module eventModule, LocalDateTime bookedDate) {
+        createCancelledBooking(user, event, bookedDate, null);
+        insertCourseRecord(course, user, bookedDate, "UNREGISTERED");
+        insertCancelledBookedModuleRecord(eventModule, user, event, course.id, bookedDate);
+    }
+
     public void createRequestedBooking(CSLUser user, Event event, LocalDateTime bookingTime, @Nullable String poNumber) {
         Booking b = getGenericPartialBooking(user, event, bookingTime)
                 .setPoNumber(poNumber)
@@ -72,6 +86,8 @@ public class LearnerRecordService {
                 .build();
         dbClient.insertBooking(b);
     }
+
+    // COURSE RECORD
 
     public void addCompletedRequiredCourseRecord(Course course, CSLUser user, LocalDateTime lastUpdated) {
         CourseRecord cr = CourseRecord.fromCourse(course, user.uid, "COMPLETED", 1, lastUpdated);
@@ -82,6 +98,8 @@ public class LearnerRecordService {
         CourseRecord cr = CourseRecord.fromCourse(course, user.uid, state, 1, lastUpdated);
         dbClient.insertCourseRecords(List.of(new CourseRecord[]{cr}));
     }
+
+    // MDOULE RECORD
 
     public void addCompletedRequiredModuleRecords(List<Module> modules, CSLUser user, LocalDateTime completedDate, String courseId) {
         LocalDateTime createdDate = completedDate.minus(1, ChronoUnit.MONTHS);
@@ -94,6 +112,13 @@ public class LearnerRecordService {
         LocalDateTime eventDate = event.getEventDate();
         ModuleRecord mr = ModuleRecord.fromModule(module, event.id, "APPROVED", null, createdDate,
                 createdDate, courseId, user.uid, null, eventDate);
+        dbClient.insertModuleRecord(mr);
+    }
+
+    public void insertCancelledBookedModuleRecord(Module eventModule, CSLUser user, Event event, String courseId, LocalDateTime bookedDate) {
+        LocalDateTime eventDate = event.getEventDate();
+        ModuleRecord mr = ModuleRecord.fromModule(eventModule, event.id, "UNREGISTERED", null, bookedDate,
+                bookedDate, courseId, user.uid, null, eventDate);
         dbClient.insertModuleRecord(mr);
     }
 

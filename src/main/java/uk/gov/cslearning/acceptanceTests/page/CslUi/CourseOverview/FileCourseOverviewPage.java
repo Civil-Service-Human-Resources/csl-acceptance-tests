@@ -14,10 +14,6 @@ public class FileCourseOverviewPage extends CourseOverviewPage {
     public void start(String documentName) {
         WebElement startLink = driver.findElement(By.linkText(documentName));
         startLink.click();
-        try {
-            Thread.sleep(timeoutMs);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(String.format("Exception whilst waiting for file to download: %s", e.getMessage()));
-        }
+        wait(timeoutMs);
     }
 }

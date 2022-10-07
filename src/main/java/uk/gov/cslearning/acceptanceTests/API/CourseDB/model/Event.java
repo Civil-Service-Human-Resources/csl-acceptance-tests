@@ -3,6 +3,9 @@ package uk.gov.cslearning.acceptanceTests.API.CourseDB.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 public class Event {
@@ -21,6 +24,11 @@ public class Event {
         this.status = status;
         this.cancellationReason = cancellationReason;
     }
+    @JsonIgnore
+    public void setEventDate(LocalDateTime date) {
+        dateRanges.get(0).date = Arrays.asList(date.getYear(), date.getMonth().getValue(), date.getDayOfMonth());
+    }
+
 
     @JsonIgnore
     public LocalDateTime getEventDate() {

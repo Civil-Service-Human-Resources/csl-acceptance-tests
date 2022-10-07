@@ -15,6 +15,7 @@ import uk.gov.cslearning.acceptanceTests.step.EventBookingSteps;
 import uk.gov.cslearning.acceptanceTests.page.CslUi.HomePage;
 import uk.gov.cslearning.acceptanceTests.util.LearnerRecordService;
 
+import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
@@ -61,43 +62,48 @@ public class TestEvents extends BaseLearnerTest {
 
     @Test
     public void testCancelFreeEvent() {
-        CSLUser user = this.cache.getCurrentUser();
         EventModule eventModule = moduleCreationService.eventModule(false, 0, yesterday.minus(2, ChronoUnit.DAYS));
         Course course = courseManagementService.createCourseWithSetModules(List.of(eventModule));
         courseManagementService.addEvents(course);
         Event event = eventModule.events.get(0);
-        learnerRecordService.createConfirmedBooking(user, event, yesterday.minus(3, ChronoUnit.DAYS), null);
-        learnerRecordService.insertCourseRecord(course, user, yesterday.minus(3, ChronoUnit.DAYS), "APPROVED");
-        learnerRecordService.insertConfirmedBookedModuleRecord(eventModule, user, event, course.id, yesterday.minus(3, ChronoUnit.DAYS));
+        learnerRecordService.createConfirmedBookingWithCourseRecord(this.cache.getCurrentUser(), course, event, eventModule, yesterday.minus(3, ChronoUnit.DAYS));
         eventBookingSteps.cancelBooking(eventModule.title, null);
         courseCompletionSteps.assertEventIsCancelledOnHomepage(eventModule.title);
     }
 
     @Test
-    public void testCompleteFreeEvent() {
-        CSLUser user = this.cache.getCurrentUser();
-        EventModule eventModule = moduleCreationService.eventModule(false, 0, yesterday.minus(2, ChronoUnit.DAYS));
+    public void testSignupForAndCompleteFreeEvent() {
+        EventModule eventModule = moduleCreationService.eventModule(false, 0, learningRecordUtils.getTomorrow());
         Course course = courseManagementService.createCourseWithSetModules(List.of(eventModule));
         courseManagementService.addEvents(course);
-        Event event = eventModule.events.get(0);
-        learnerRecordService.createConfirmedBooking(user, event, yesterday.minus(3, ChronoUnit.DAYS), null);
-        learnerRecordService.insertCourseRecord(course, user, yesterday.minus(3, ChronoUnit.DAYS), "APPROVED");
-        learnerRecordService.insertConfirmedBookedModuleRecord(eventModule, user, event, course.id, yesterday.minus(3, ChronoUnit.DAYS));
+        eventBookingSteps.bookEventCourse(course.id, eventModule, eventModule.events.get(0).id);
+        EventModule mod = (EventModule) course.modules.get(0);
+        mod.events.get(0).setEventDate(yesterday.minus(2, ChronoUnit.DAYS));
+        courseManagementService.createCourse(course);
         courseCompletionSteps.assertEventIsConfirmedOnHomepage(eventModule.title);
         courseCompletionSteps.completeCourseEventOnHomepage(course.title);
         courseCompletionSteps.assertCourseCompletedOnLearningRecord(course.title, LocalDateTime.now());
     }
 
     @Test
+    public void testRebookFreeEvent() {
+        EventModule eventModule = moduleCreationService.eventModule(false, 0, yesterday.plus(3, ChronoUnit.DAYS));
+        Course course = courseManagementService.createCourseWithSetModules(List.of(eventModule));
+        courseManagementService.addEvents(course);
+        Event event = eventModule.events.get(0);
+        learnerRecordService.createCancelledBookingWithCourseRecord(this.cache.getCurrentUser(), course, event, eventModule, yesterday.minus(2, ChronoUnit.DAYS));
+        eventBookingSteps.bookEventCourse(course.id, eventModule, eventModule.events.get(0).id);
+        seleniumUtils.wait(1000);
+        courseCompletionSteps.assertEventIsConfirmedOnHomepage(eventModule.title);
+    }
+
+    @Test
     public void testDidNotAttendFreeEvent() {
-        CSLUser user = this.cache.getCurrentUser();
         EventModule eventModule = moduleCreationService.eventModule(false, 0, yesterday.minus(2, ChronoUnit.DAYS));
         Course course = courseManagementService.createCourseWithSetModules(List.of(eventModule));
         courseManagementService.addEvents(course);
         Event event = eventModule.events.get(0);
-        learnerRecordService.createConfirmedBooking(user, event, yesterday.minus(3, ChronoUnit.DAYS), null);
-        learnerRecordService.insertCourseRecord(course, user, yesterday.minus(3, ChronoUnit.DAYS), "APPROVED");
-        learnerRecordService.insertConfirmedBookedModuleRecord(eventModule, user, event, course.id, yesterday.minus(3, ChronoUnit.DAYS));
+        learnerRecordService.createConfirmedBookingWithCourseRecord(this.cache.getCurrentUser(), course, event, eventModule, yesterday.minus(3, ChronoUnit.DAYS));
         courseCompletionSteps.assertEventIsConfirmedOnHomepage(eventModule.title);
         courseCompletionSteps.didNotAttendCourseEventOnHomepage(course.title);
         courseCompletionSteps.assertCourseOnHomepage(course.title);
@@ -116,15 +122,12 @@ public class TestEvents extends BaseLearnerTest {
 
     @Test
     public void testProgressBlendedCourseWithPastEvent() {
-        CSLUser user = this.cache.getCurrentUser();
         EventModule eventModule = moduleCreationService.eventModule(false, 0, yesterday.minus(2, ChronoUnit.DAYS));
         Module videoModule = moduleCreationService.videoModule(false);
         Course course = courseManagementService.createCourseWithSetModules(List.of(eventModule, videoModule));
         courseManagementService.addEvents(course);
         Event event = eventModule.events.get(0);
-        learnerRecordService.createConfirmedBooking(user, event, yesterday.minus(3, ChronoUnit.DAYS), null);
-        learnerRecordService.insertCourseRecord(course, user, yesterday.minus(3, ChronoUnit.DAYS), "APPROVED");
-        learnerRecordService.insertConfirmedBookedModuleRecord(eventModule, user, event, course.id, yesterday.minus(3, ChronoUnit.DAYS));
+        learnerRecordService.createConfirmedBookingWithCourseRecord(this.cache.getCurrentUser(), course, event, eventModule, yesterday.minus(3, ChronoUnit.DAYS));
         courseCompletionSteps.completeVideoOnBlendedCourse(course.id, videoModule.title);
         courseCompletionSteps.completeCourseEventOnHomepage(course.title);
         courseCompletionSteps.assertCourseCompletedOnLearningRecord(course.title, LocalDateTime.now());

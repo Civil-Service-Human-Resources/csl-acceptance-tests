@@ -10,9 +10,11 @@ import uk.gov.cslearning.acceptanceTests.page.CslIdentity.LoginPage;
 import uk.gov.cslearning.acceptanceTests.page.CslIdentity.ReactivationPage;
 import uk.gov.cslearning.acceptanceTests.page.CslUi.HomePage;
 
+import javax.annotation.PostConstruct;
+
 public class TestReactivation extends IdentityTests {
 
-    CSLUser user = userManagementService.getUser(UserType.LEARNER);
+    CSLUser user;
 
     @Autowired
     HomePage homepage;
@@ -22,6 +24,11 @@ public class TestReactivation extends IdentityTests {
 
     @Autowired
     ReactivationPage reactivationPage;
+
+    @PostConstruct
+    public void init() {
+        user = userManagementService.getUser(UserType.LEARNER);
+    }
 
     @AfterEach
     public void afterEach() {
