@@ -120,4 +120,23 @@ public class TestCourseCompletion extends BaseLearnerTest {
         courseCompletionSteps.assertCourseCompletedOnLearningRecord(course.title, LocalDateTime.now());
     }
 
+    @Test
+    public void testBlendedCourseCompleteProgressThenComplete() {
+        Module videoModule = moduleCreationService.videoModule(false);
+        FileModule fileModule = moduleCreationService.fileModule(false);
+        Course course = courseManagementService.createCourseWithSetModules(List.of(new Module[]{videoModule, fileModule}));
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, fileModule.title);
+        seleniumUtils.wait(2000);
+        courseCompletionSteps.assertCourseInProgressOnHomepage(course.title);
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, videoModule.title);
+        seleniumUtils.wait(4000);
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, fileModule.title);
+        seleniumUtils.wait(2000);
+        courseCompletionSteps.assertCourseInProgressOnHomepage(course.title);
+        courseCompletionSteps.completeVideoOnBlendedCourse(course.id, videoModule.title);
+        seleniumUtils.wait(4000);
+        courseCompletionSteps.assertModuleCompletedOnCourseOverview(course.id, videoModule.title);
+        courseCompletionSteps.assertCourseCompletedOnLearningRecord(course.title, LocalDateTime.now());
+    }
+
 }
