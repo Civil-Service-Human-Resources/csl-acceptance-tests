@@ -4,149 +4,147 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f13154-8806-4d35-87b7-2b57b23348fa" name="Changes" comment="Extent reports and adding waits for tests. Added more tests for optional modules">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="71f13154-8806-4d35-87b7-2b57b23348fa" name="Changes" comment=".gitignore update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_5_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_dieselpoint_norm_1_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_3_2_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_api_3_2_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_core_3_2_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_3_2_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_httpclient5_3_2_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_0_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_bonigarcia_webdrivermanager_5_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_70_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_core_1_0_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_http_1_0_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava3_rxjava_3_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_client5_httpclient5_5_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_5_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_h2_5_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_brotli_dec_0_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_suite_api_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_suite_commons_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_suite_engine_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_12_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/ElasticDBConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/ElasticsearchClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Audience.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/DateRange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/ELearningModule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/EventModule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/FileModule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/LearningProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Module.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/ModuleType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Owner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/API/CourseDB/model/Venue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/AcceptanceTestsApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/CSRS/CsrsDBClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/DBConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/DbClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/Identity/IdentityDBClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/LearnerRecordDBClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/Booking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/CourseRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/Learner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearnerRecord/model/ModuleRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/DB/LearningLockerClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/Models/BookingState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/Models/CSLUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/Models/UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/Models/builder/BookingBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/annotation/LazyAutowired.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/annotation/LazyConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/ExtentReport/ExtentConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/ExtentReport/ExtentReporting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/ScreenShotter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/StaticWebDriverAccess.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/WebDriverLibrary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/annotation/WebdriverScope.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/annotation/WebdriverScopeBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/annotation/WebdriverScopeConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uk/gov/cslearning/acceptanceTests/libs/webDriver/annotation/WebdriverScopePostProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/files/dummy.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/AcceptanceTestsApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/BaseDiscite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/CourseDiscite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/DisciteStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/EventDiscite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/LearningRecordTableRow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/Management/EventAttendeeListElem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/Management/ModuleContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/Management/ModuleItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/Management/ModuleListDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Components/ModuleDiscite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Data/AudienceCreationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Data/CourseData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Data/ModuleCreationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/SeleniumTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/CourseAdminSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/CourseCompletionSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/EventBookingSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/LearningPlanSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Steps/SearchSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/Cache.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/CourseManagementService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/FrontendCourseCreationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/LearnerRecordService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/LearningRecordUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/LoginUtilityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/SeleniumUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/Utils/UserManagementService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/extensions/ScreenshotExtension.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/CslIdentityBasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/SignUp/SignUpCodePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/SignUp/SignUpPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/SignUp/SignUpPasswordPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslIdentity/SignUp/SignUpRequestPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/ContentManagementPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/CourseDetailsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/CourseTitlePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/CourseVisibilityPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddFaceToFaceModulePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddLinkModulePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddModuleBasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddModuleLandingPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddModuleLandingPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseCreation/ModuleCreation/AddUploadableModulePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CourseManagementOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CoursePreviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/CslManagementBasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/AdminEventCancellationReason.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/CancelEventAttendeePage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/CancelEventAttendeePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/EventAttendeeOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslManagement/event/EventOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseCompletePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/CourseOverviewPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/CourseOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/ELearningCourseOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/EventCourseOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/FileCourseOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/LinkCourseOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CourseOverview/VideoCourseOverviewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/CslUiBasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/LearningRecordPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/ELearning/BasicGomoPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/CancellationReason.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventAccessibilityRequirementsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventBookingRequestSubmittedPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventBookingSummaryPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventCancellationConfirmationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventCancellationPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventCancellationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventConfirmPaymentDetailsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventDateTimeLocationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/Event/EventPaymentDetailsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/Modules/VideoModulePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/pages/CslUi/SuggestionsForYouPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/TestCreateAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/TestLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/admin/AdminTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/admin/TestEvents.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/BaseLearnerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestCourseCompletion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestEvents.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestLearningPlan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestOptionalModulesCourseCompletion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/uk/gov/cslearning/acceptanceTests/tests/learner/TestRequiredLearning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +188,9 @@
       </map>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -206,20 +207,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="TF_FMT" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "TF_FMT": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "aspect.path.notification.shown": "true",
+    "javascript.karma.karma_node_package_dir": "",
+    "spring.configuration.checksum": "9965661631b07ebb7f345a1e9b53f884",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -248,35 +245,108 @@
       <recent name="uk.gov.cslearning.acceptanceTests.pages.CslUi.Modules.Event" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
-    <configuration name="TestEvents.testSignupForFreeEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.uk.gov.cslearning.acceptanceTests.test.admin in acceptanceTests">
+    <configuration name="TestCourseCompletion.testBlendedCourseCompleteProgressThenComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="acceptanceTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.tests.learner.*" />
+          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.test.learner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner" />
-      <option name="MAIN_CLASS_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner.TestEvents" />
-      <option name="METHOD_NAME" value="testSignupForFreeEvent" />
+      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.test.learner" />
+      <option name="MAIN_CLASS_NAME" value="uk.gov.cslearning.acceptanceTests.test.learner.TestCourseCompletion" />
+      <option name="METHOD_NAME" value="testBlendedCourseCompleteProgressThenComplete" />
       <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="IDENTITY_BASE_URL" value="https://identity.performance.learn.civilservice.gov.uk" />
+        <env name="CSL_UI_BASE_URL" value="https://performance.learn.civilservice.gov.uk" />
+        <env name="CSL_MANAGEMENT_BASE_URL" value="https://management.performance.learn.civilservice.gov.uk" />
+        <env name="ADMIN_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="ADMIN_PASSWORD" value="Password123" />
+        <env name="LEARNER_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="LEARNER_PASSWORD" value="Password123" />
+        <env name="ELASTIC_URL" value="https://elastic.performance.learn.civilservice.gov.uk:9200" />
+        <env name="ELASTIC_USERNAME" value="elastic" />
+        <env name="ELASTIC_PASSWORD" value="Y4xeojohHmdhr1LqQToS" />
+        <env name="CONTENT_CDN_BASE_URL" value="https://cdn.performance.learn.civilservice.gov.uk" />
+        <env name="SAMPLE_VIDEO_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/un5zRBcMSa2MkC0pDhssfQ/welcome_video.mp4" />
+        <env name="SAMPLE_ELEARNING_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/Ke_tn30jThymKhjmiRcRew" />
+        <env name="LEARNER_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/learner_record?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="IDENTITY_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/identity?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="CSRS_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/csrs?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="MONGO_DB" value="mongodb://lpg-lpgperf-cosmos:sjKQXlRCH5Jm2hkmC74ucIxOTddnveeegLoIe1WPa2T440ZGa8KcmhJyscaWu4a4W0ZC2uo2uH3vcKSGjCcxZQ==@lpg-lpgperf-cosmos.mongo.cosmos.azure.com:10255/?ssl=true&amp;retrywrites=false" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOptionalModulesCourseCompletion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCourseCompletion.testCompleteFileCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="acceptanceTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.tests.learner.*" />
+          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.test.learner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner" />
-      <option name="MAIN_CLASS_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner.TestOptionalModulesCourseCompletion" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.test.learner" />
+      <option name="MAIN_CLASS_NAME" value="uk.gov.cslearning.acceptanceTests.test.learner.TestCourseCompletion" />
+      <option name="METHOD_NAME" value="testCompleteFileCourse" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="IDENTITY_BASE_URL" value="https://identity.performance.learn.civilservice.gov.uk" />
+        <env name="CSL_UI_BASE_URL" value="https://performance.learn.civilservice.gov.uk" />
+        <env name="CSL_MANAGEMENT_BASE_URL" value="https://management.performance.learn.civilservice.gov.uk" />
+        <env name="ADMIN_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="ADMIN_PASSWORD" value="Password123" />
+        <env name="LEARNER_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="LEARNER_PASSWORD" value="Password123" />
+        <env name="ELASTIC_URL" value="https://elastic.performance.learn.civilservice.gov.uk:9200" />
+        <env name="ELASTIC_USERNAME" value="elastic" />
+        <env name="ELASTIC_PASSWORD" value="Y4xeojohHmdhr1LqQToS" />
+        <env name="CONTENT_CDN_BASE_URL" value="https://cdn.performance.learn.civilservice.gov.uk" />
+        <env name="SAMPLE_VIDEO_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/un5zRBcMSa2MkC0pDhssfQ/welcome_video.mp4" />
+        <env name="SAMPLE_ELEARNING_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/Ke_tn30jThymKhjmiRcRew" />
+        <env name="LEARNER_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/learner_record?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="IDENTITY_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/identity?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="CSRS_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/csrs?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="MONGO_DB" value="mongodb://lpg-lpgperf-cosmos:sjKQXlRCH5Jm2hkmC74ucIxOTddnveeegLoIe1WPa2T440ZGa8KcmhJyscaWu4a4W0ZC2uo2uH3vcKSGjCcxZQ==@lpg-lpgperf-cosmos.mongo.cosmos.azure.com:10255/?ssl=true&amp;retrywrites=false" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLearningPlan.testRemoveFromSuggestionsAndComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acceptanceTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.test.learner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.test.learner" />
+      <option name="MAIN_CLASS_NAME" value="uk.gov.cslearning.acceptanceTests.test.learner.TestLearningPlan" />
+      <option name="METHOD_NAME" value="testRemoveFromSuggestionsAndComplete" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="IDENTITY_BASE_URL" value="https://identity.performance.learn.civilservice.gov.uk" />
+        <env name="CSL_UI_BASE_URL" value="https://performance.learn.civilservice.gov.uk" />
+        <env name="CSL_MANAGEMENT_BASE_URL" value="https://management.performance.learn.civilservice.gov.uk" />
+        <env name="ADMIN_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="ADMIN_PASSWORD" value="Password123" />
+        <env name="LEARNER_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="LEARNER_PASSWORD" value="Password123" />
+        <env name="ELASTIC_URL" value="https://elastic.performance.learn.civilservice.gov.uk:9200" />
+        <env name="ELASTIC_USERNAME" value="elastic" />
+        <env name="ELASTIC_PASSWORD" value="Y4xeojohHmdhr1LqQToS" />
+        <env name="CONTENT_CDN_BASE_URL" value="https://cdn.performance.learn.civilservice.gov.uk" />
+        <env name="SAMPLE_VIDEO_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/un5zRBcMSa2MkC0pDhssfQ/welcome_video.mp4" />
+        <env name="SAMPLE_ELEARNING_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/Ke_tn30jThymKhjmiRcRew" />
+        <env name="LEARNER_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/learner_record?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="IDENTITY_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/identity?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="CSRS_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/csrs?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="MONGO_DB" value="mongodb://lpg-lpgperf-cosmos:sjKQXlRCH5Jm2hkmC74ucIxOTddnveeegLoIe1WPa2T440ZGa8KcmhJyscaWu4a4W0ZC2uo2uH3vcKSGjCcxZQ==@lpg-lpgperf-cosmos.mongo.cosmos.azure.com:10255/?ssl=true&amp;retrywrites=false" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -286,22 +356,95 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="IDENTITY_BASE_URL" value="https://identity.performance.learn.civilservice.gov.uk" />
+        <env name="CSL_UI_BASE_URL" value="https://performance.learn.civilservice.gov.uk" />
+        <env name="CSL_MANAGEMENT_BASE_URL" value="https://management.performance.learn.civilservice.gov.uk" />
+        <env name="ADMIN_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="ADMIN_PASSWORD" value="Password123" />
+        <env name="LEARNER_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="LEARNER_PASSWORD" value="Password123" />
+        <env name="ELASTIC_URL" value="https://elastic.performance.learn.civilservice.gov.uk:9200" />
+        <env name="ELASTIC_USERNAME" value="elastic" />
+        <env name="ELASTIC_PASSWORD" value="Y4xeojohHmdhr1LqQToS" />
+        <env name="CONTENT_CDN_BASE_URL" value="https://cdn.performance.learn.civilservice.gov.uk" />
+        <env name="SAMPLE_VIDEO_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/un5zRBcMSa2MkC0pDhssfQ/welcome_video.mp4" />
+        <env name="SAMPLE_ELEARNING_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/Ke_tn30jThymKhjmiRcRew" />
+        <env name="LEARNER_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/learner_record?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="IDENTITY_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/identity?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="CSRS_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/csrs?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="MONGO_DB" value="mongodb://lpg-lpgperf-cosmos:sjKQXlRCH5Jm2hkmC74ucIxOTddnveeegLoIe1WPa2T440ZGa8KcmhJyscaWu4a4W0ZC2uo2uH3vcKSGjCcxZQ==@lpg-lpgperf-cosmos.mongo.cosmos.azure.com:10255/?ssl=true&amp;retrywrites=false" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uk.gov.cslearning.acceptanceTests.tests.learner in acceptanceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="uk.gov.cslearning.acceptanceTests.test.admin in acceptanceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="acceptanceTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.tests.learner.*" />
+          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.test.admin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.tests.learner" />
+      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.test.admin" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <envs>
+        <env name="IDENTITY_BASE_URL" value="https://identity.performance.learn.civilservice.gov.uk" />
+        <env name="CSL_UI_BASE_URL" value="https://performance.learn.civilservice.gov.uk" />
+        <env name="CSL_MANAGEMENT_BASE_URL" value="https://management.performance.learn.civilservice.gov.uk" />
+        <env name="ADMIN_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="ADMIN_PASSWORD" value="Password123" />
+        <env name="LEARNER_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="LEARNER_PASSWORD" value="Password123" />
+        <env name="ELASTIC_URL" value="https://elastic.performance.learn.civilservice.gov.uk:9200" />
+        <env name="ELASTIC_USERNAME" value="elastic" />
+        <env name="ELASTIC_PASSWORD" value="Y4xeojohHmdhr1LqQToS" />
+        <env name="CONTENT_CDN_BASE_URL" value="https://cdn.performance.learn.civilservice.gov.uk" />
+        <env name="SAMPLE_VIDEO_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/un5zRBcMSa2MkC0pDhssfQ/welcome_video.mp4" />
+        <env name="SAMPLE_ELEARNING_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/Ke_tn30jThymKhjmiRcRew" />
+        <env name="LEARNER_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/learner_record?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="IDENTITY_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/identity?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="CSRS_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/csrs?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="MONGO_DB" value="mongodb://lpg-lpgperf-cosmos:sjKQXlRCH5Jm2hkmC74ucIxOTddnveeegLoIe1WPa2T440ZGa8KcmhJyscaWu4a4W0ZC2uo2uH3vcKSGjCcxZQ==@lpg-lpgperf-cosmos.mongo.cosmos.azure.com:10255/?ssl=true&amp;retrywrites=false" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uk.gov.cslearning.acceptanceTests.test.learner in acceptanceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="acceptanceTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uk.gov.cslearning.acceptanceTests.test.learner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uk.gov.cslearning.acceptanceTests.test.learner" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <envs>
+        <env name="IDENTITY_BASE_URL" value="https://identity.performance.learn.civilservice.gov.uk" />
+        <env name="CSL_UI_BASE_URL" value="https://performance.learn.civilservice.gov.uk" />
+        <env name="CSL_MANAGEMENT_BASE_URL" value="https://management.performance.learn.civilservice.gov.uk" />
+        <env name="ADMIN_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="ADMIN_PASSWORD" value="Password123" />
+        <env name="LEARNER_EMAIL" value="jamie.lovell@cabinetoffice.gov.uk" />
+        <env name="LEARNER_PASSWORD" value="Password123" />
+        <env name="ELASTIC_URL" value="https://elastic.performance.learn.civilservice.gov.uk:9200" />
+        <env name="ELASTIC_USERNAME" value="elastic" />
+        <env name="ELASTIC_PASSWORD" value="Y4xeojohHmdhr1LqQToS" />
+        <env name="CONTENT_CDN_BASE_URL" value="https://cdn.performance.learn.civilservice.gov.uk" />
+        <env name="SAMPLE_VIDEO_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/un5zRBcMSa2MkC0pDhssfQ/welcome_video.mp4" />
+        <env name="SAMPLE_ELEARNING_CDN_LOCATION" value="https://cdn.performance.learn.civilservice.gov.uk/lpgdevcontent/w2vwJrEQS6Ox_cvmELLIfQ/Ke_tn30jThymKhjmiRcRew" />
+        <env name="LEARNER_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/learner_record?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="IDENTITY_RECORD_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/identity?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="CSRS_DB" value="jdbc:mysql://lpg-lpgperf-gp.mysql.database.azure.com:3306/csrs?user=mysqladminuser@lpg-lpgperf-gp&amp;password=Vm8u1Dh4KZifT5RY&amp;useSSL=true&amp;requireSSL=false" />
+        <env name="MONGO_DB" value="mongodb://lpg-lpgperf-cosmos:sjKQXlRCH5Jm2hkmC74ucIxOTddnveeegLoIe1WPa2T440ZGa8KcmhJyscaWu4a4W0ZC2uo2uH3vcKSGjCcxZQ==@lpg-lpgperf-cosmos.mongo.cosmos.azure.com:10255/?ssl=true&amp;retrywrites=false" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -320,28 +463,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="JUnit.TestOptionalModulesCourseCompletion" />
-      <item itemvalue="JUnit.uk.gov.cslearning.acceptanceTests.tests.learner in acceptanceTests" />
-      <item itemvalue="JUnit.TestEvents.testSignupForFreeEvent" />
+      <item itemvalue="JUnit.TestCourseCompletion.testBlendedCourseCompleteProgressThenComplete" />
+      <item itemvalue="JUnit.uk.gov.cslearning.acceptanceTests.test.admin in acceptanceTests" />
+      <item itemvalue="JUnit.uk.gov.cslearning.acceptanceTests.test.learner in acceptanceTests" />
+      <item itemvalue="JUnit.TestCourseCompletion.testCompleteFileCourse" />
+      <item itemvalue="JUnit.TestLearningPlan.testRemoveFromSuggestionsAndComplete" />
       <item itemvalue="Spring Boot.AcceptanceTestsApplication" />
       <item itemvalue="Spring Boot.AcceptanceTestsApplication (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="JUnit.TestOptionalModulesCourseCompletion" />
-        <item itemvalue="JUnit.TestEvents.testSignupForFreeEvent" />
-        <item itemvalue="JUnit.uk.gov.cslearning.acceptanceTests.tests.learner in acceptanceTests" />
+        <item itemvalue="JUnit.uk.gov.cslearning.acceptanceTests.test.admin in acceptanceTests" />
+        <item itemvalue="JUnit.uk.gov.cslearning.acceptanceTests.test.learner in acceptanceTests" />
+        <item itemvalue="JUnit.TestCourseCompletion.testBlendedCourseCompleteProgressThenComplete" />
+        <item itemvalue="JUnit.TestLearningPlan.testRemoveFromSuggestionsAndComplete" />
+        <item itemvalue="JUnit.TestCourseCompletion.testCompleteFileCourse" />
       </list>
     </recent_temporary>
   </component>
@@ -370,6 +507,10 @@
       <workItem from="1659940310451" duration="30991000" />
       <workItem from="1660049423709" duration="4164000" />
       <workItem from="1660055651992" duration="398000" />
+      <workItem from="1666951587337" duration="4690000" />
+      <workItem from="1666959252105" duration="2416000" />
+      <workItem from="1670317814411" duration="911000" />
+      <workItem from="1672925171854" duration="3836000" />
     </task>
     <task id="LOCAL-00001" summary="Added tests for completing courses and moving courses around in learning plan / suggested learning.">
       <created>1658832650035</created>
@@ -420,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660055362780</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added extra blended course test">
+      <created>1672926073000</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672926073000</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +584,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -447,7 +594,8 @@
     <MESSAGE value="Added screenshot capability, fixed remaining broken tests" />
     <MESSAGE value="Extent reports and adding waits for tests" />
     <MESSAGE value="Extent reports and adding waits for tests. Added more tests for optional modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extent reports and adding waits for tests. Added more tests for optional modules" />
+    <MESSAGE value="Added extra blended course test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added extra blended course test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -461,6 +609,31 @@
           <url>file://$PROJECT_DIR$/src/test/java/uk/gov/cslearning/acceptanceTests/tests/learner/TestOptionalModulesCourseCompletion.java</url>
           <line>47</line>
           <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uk/gov/cslearning/acceptanceTests/test/learner/TestOptionalModulesCourseCompletion.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uk/gov/cslearning/acceptanceTests/step/CourseCompletionSteps.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uk/gov/cslearning/acceptanceTests/test/learner/TestCourseCompletion.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uk/gov/cslearning/acceptanceTests/test/learner/TestCourseCompletion.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uk/gov/cslearning/acceptanceTests/page/CslUi/Modules/VideoModulePage.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="256" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
