@@ -43,6 +43,7 @@ public class TestLearningPlan extends BaseLearnerTest {
         seleniumUtils.wait(1000);
         learningPlanSteps.addToLearningPlan(course.title);
         learningPlanSteps.removeFromLearningPlan(course.title);
+        courseCompletionSteps.assertCourseNotOnHomepage(course.title);
     }
 
     @Test

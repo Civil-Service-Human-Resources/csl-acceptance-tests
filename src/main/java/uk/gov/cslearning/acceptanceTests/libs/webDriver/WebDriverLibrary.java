@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import uk.gov.cslearning.acceptanceTests.annotation.LazyConfiguration;
 import uk.gov.cslearning.acceptanceTests.libs.webDriver.annotation.WebdriverScopeBean;
 
@@ -23,8 +24,8 @@ public class WebDriverLibrary {
     @Value("${browser.headless}")
     private boolean headlessBrowser;
 
-    @Bean
-    @WebdriverScopeBean
+    @Bean(destroyMethod = "quit")
+    @Scope("singleton")
     public WebDriver getDriver() {
 
         WebDriver driver = null;

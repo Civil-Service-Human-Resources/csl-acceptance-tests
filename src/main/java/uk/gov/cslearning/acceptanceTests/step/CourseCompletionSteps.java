@@ -147,6 +147,7 @@ public class CourseCompletionSteps {
 
     public void completeELearningOnBlendedCourse(String courseId, String moduleTitle) {
         doModuleOnBlendedCourse(courseId, moduleTitle);
+        seleniumUtils.wait(2000);
         basicGomoPage.scrollToBottom();
     }
 

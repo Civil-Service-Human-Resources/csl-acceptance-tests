@@ -55,7 +55,7 @@ public class LoginPage extends CslIdentityBasePage {
     }
 
     public void navigateTo() {
-        navigate(this.baseUrl);
+        navigate(this.baseUrl + "/login");
     }
 
     public String getBaseUrl() {

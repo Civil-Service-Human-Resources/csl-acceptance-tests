@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import uk.gov.cslearning.acceptanceTests.API.CourseDB.model.Course;
+import uk.gov.cslearning.acceptanceTests.API.CourseDB.model.ELearningModule;
 import uk.gov.cslearning.acceptanceTests.API.CourseDB.model.Module;
 import uk.gov.cslearning.acceptanceTests.data.ModuleCreationService;
 import uk.gov.cslearning.acceptanceTests.annotation.SeleniumTest;
@@ -56,6 +57,43 @@ public class TestOptionalModulesCourseCompletion extends BaseLearnerTest {
         courseCompletionSteps.assertCourseInProgressOnHomepage(course.title);
         courseCompletionSteps.doModuleOnBlendedCourse(course.id, optionalLinkModule2.title);
         courseCompletionSteps.assertModuleCompletedOnCourseOverview(course.id, optionalLinkModule2.title);
+        courseCompletionSteps.assertCourseCompletedOnLearningRecord(course.title, today);
+    }
+
+    @DisplayName("Test that a blended course will complete when there is at least 1 optional module")
+    @Test
+    public void testBlendedCourseMixedCompletion() {
+        Module optionalLinkModule = moduleCreationService.linkModule(true);
+        ELearningModule eLearningModule = moduleCreationService.eLearningModule(false);
+        Module videoModule = moduleCreationService.videoModule(false);
+        Module requiredLinkModule = moduleCreationService.linkModule(false);
+        Course course = courseManagementService.createCourseWithSetModules(List.of(
+                new Module[]{
+                        optionalLinkModule, eLearningModule,
+                        videoModule, requiredLinkModule}));
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, optionalLinkModule.title);
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, eLearningModule.title);
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, requiredLinkModule.title);
+        courseCompletionSteps.completeELearningOnBlendedCourse(course.id, eLearningModule.title);
+        courseCompletionSteps.completeVideoOnBlendedCourse(course.id, videoModule.title);
+        courseCompletionSteps.assertCourseCompletedOnLearningRecord(course.title, today);
+    }
+
+    @DisplayName("Test that a blended course will complete when there is at least 1 optional module")
+    @Test
+    public void testBlendedCourseMixedCompletion2() {
+        Module optionalLinkModule = moduleCreationService.linkModule(true);
+        Module requiredLink1 = moduleCreationService.linkModule(false);
+        Module requiredLink2 = moduleCreationService.linkModule(false);
+        Module requiredLink3 = moduleCreationService.linkModule(false);
+        Course course = courseManagementService.createCourseWithSetModules(List.of(
+                new Module[]{
+                        optionalLinkModule, requiredLink1,
+                        requiredLink2, requiredLink3}));
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, optionalLinkModule.title);
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, requiredLink1.title);
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, requiredLink2.title);
+        courseCompletionSteps.doModuleOnBlendedCourse(course.id, requiredLink3.title);
         courseCompletionSteps.assertCourseCompletedOnLearningRecord(course.title, today);
     }
 
